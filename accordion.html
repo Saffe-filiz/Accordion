@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion</title>
+	<link rel="stylesheet" href="accordion.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="app.js" defer></script>
+</head>
+<body>
+	<section id="app">
+		<div class="content">
+			<faq v-for="(question, index) in questions" 
+			:question="question" 
+			:index="index" 
+			:key="index"
+			:open="question.open"
+			@chosen_question="chosen_question"/>
+		</div>
+	</section>
+</body>
+</html>
