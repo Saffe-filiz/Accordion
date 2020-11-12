@@ -41,6 +41,7 @@ html, #app {
 	border-radius: 5px;
 	background-color: #fff;
 	transition: 0.4s all;
+	cursor: pointer;
 }
 
 .content .questions-on {
@@ -50,6 +51,7 @@ html, #app {
 	border-radius: 5px;
 	background-color: #fff;
 	transition: 0.4s all;
+	cursor: pointer;
 }
 
 .content .title .question {
