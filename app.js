@@ -10,7 +10,7 @@ Vue.component('windows', {
               <li v-for="(w, index) in questions" :class="[w.open ? 'active': '']"  @click="$emit('chosen_question', index)">
                <h3>{{w.question}}</h3>
                 <p>{{w.answer}} </p>
-                <button>Learn more</button>
+                <button @click.stop>Learn more</button>
              </li>
             </ul>
           </span>
