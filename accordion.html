@@ -2,20 +2,22 @@
 <html>
 <head>
 	<title>Accordion</title>
-	<link rel="stylesheet" href="accordion.css">
+	<link rel="stylesheet" type="text/css" href="Accordion.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<script src="app.js" defer></script>
 </head>
 <body>
-	<section id="app">
-		<div class="content">
-			<faq v-for="(question, index) in questions" 
-			:question="question" 
-			:index="index" 
-			:key="index"
-			:open="question.open"
-			@chosen_question="chosen_question"/>
-		</div>
-	</section>
+<section class="container">
+   <div class="content">
+       <span class="title">
+	    <h1>Several windows stacked on each other</h1>
+       </span>
+       <span class="info">
+	    <h4>The accordion is a graphical control element comprising a vertically stacked list of items, such as labels or thumbnails. </h4>
+       </span>
+       <hr>
+       <windows :questions="questions" @chosen_question="chosen_question"/>
+   </div>
+</section>
 </body>
 </html>
